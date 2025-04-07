@@ -47,9 +47,9 @@ export function HeroSection() {
           <Button
             variant="default"
             className="bg-gold hover:bg-gold-light text-charcoal hover:text-charcoal-dark"
-            onClick={() => router.push("/dokumentasyon")}
+            onClick={() => router.push("/pagkakakilanlan")}
           >
-            Tingnan ang Dokumentasyon
+            Simulan ang Paglalakbay
           </Button>
           <Button
             variant="outline"

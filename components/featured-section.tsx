@@ -58,7 +58,7 @@ export function FeaturedSection() {
       title: "Dokumentasyon",
       description: "Alamin ang ilan sa mga hakbang na isinigawa",
       imageSrc: "/images/panayam-1.jpg",
-      href: "/mga-kwento",
+      href: "/dokumentasyon",
     },
   ]
 
