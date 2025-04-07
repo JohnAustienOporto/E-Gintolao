@@ -195,6 +195,10 @@ export default function MgaWikaPage() {
       definition: "Ito ay maaaring puting manok o baboy at ginagawa tuwing Martes o Biyernes ng gabi.",
     },
     {
+      term: "Alpombra",
+      definition: "Inilalagay sa ilalim ng kahon upang magsilbing pansapin at pansala ng ginto.",
+    },
+    {
       term: "Asidohan",
       definition: "Dito isinasagawa ang paglalagay ng asido sa hindi magagandang klase o mapuputlang ginto.",
     },
