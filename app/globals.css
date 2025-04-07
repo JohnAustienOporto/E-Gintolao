@@ -1,0 +1,432 @@
+/* San Francisco Font */
+@font-face {
+  font-family: "SF Pro Text";
+  src: local("SF Pro Text"), local("SFProText-Regular");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: local("SF Pro Display"), local("SFProDisplay-Regular");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: local("SF Pro Text Bold"), local("SFProText-Bold");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: local("SF Pro Display Bold"), local("SFProDisplay-Bold");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 12%; /* Darker background */
+  --foreground: 210 40% 98%;
+
+  --card: 0 0% 15%; /* Darker card background */
+  --card-foreground: 210 40% 98%;
+
+  --popover: 0 0% 15%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 187 33% 46%; /* Adjusted primary color */
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 217 33% 17%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20% 75%; /* Lighter for readability */
+
+  --accent: 217 33% 17%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217 33% 25%;
+  --input: 217 33% 25%;
+  --ring: 187 33% 46%;
+
+  --radius: 0.5rem;
+
+  /* Navbar height variables */
+  --navbar-height: 64px;
+  --navbar-height-mobile: 64px;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 187 33% 46%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 187 33% 46%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-charcoal text-slate;
+    font-family: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* Update the glass effect to work better with the new background */
+  .glass {
+    @apply backdrop-blur-md bg-opacity-20 border border-opacity-20 shadow-sm;
+    background: rgba(26, 26, 26, 0.7); /* Darker glass background */
+    border-color: rgba(166, 142, 87, 0.2); /* Gold border with low opacity */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+  }
+
+  .glass-card {
+    @apply glass rounded-lg;
+  }
+
+  .glass-navbar {
+    @apply glass z-50;
+  }
+
+  /* Neumorphism for dark theme */
+  .neu-flat {
+    background: #1f1f1f;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    @apply rounded-lg;
+  }
+
+  .neu-pressed {
+    background: #1a1a1a;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    @apply rounded-lg;
+  }
+
+  .neu-button {
+    @apply transition-all duration-300 hover:shadow-md active:shadow-inner;
+  }
+
+  /* Card styles */
+  .card-shadow {
+    @apply shadow-card transition-shadow duration-300 hover:shadow-card-hover;
+  }
+
+  /* Text effects */
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #7eb5bd, #908297);
+  }
+
+  .text-shadow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Hero section */
+  .hero-text {
+    @apply text-center z-10;
+  }
+
+  .hero-title {
+    @apply text-4xl md:text-6xl font-bold tracking-tight;
+  }
+
+  .hero-subtitle {
+    @apply text-xl md:text-2xl mt-5;
+  }
+
+  /* Microinteractions */
+  .hover-lift {
+    @apply transition-transform duration-200 hover:-translate-y-0.5;
+  }
+
+  .hover-scale {
+    @apply transition-all duration-300 hover:scale-102;
+  }
+
+  /* Scroll animations */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .fade-in-left {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .fade-in-right {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Gold gradient text */
+  .gold-gradient {
+    background: linear-gradient(135deg, #c2ad7a, #8a7545);
+  }
+
+  /* Add a subtle gold glow effect */
+  .gold-glow {
+    box-shadow: 0 0 15px rgba(166, 142, 87, 0.3);
+  }
+
+  /* Hover effect for cards */
+  .hover-gold {
+    @apply transition-all duration-300;
+  }
+  .hover-gold:hover {
+    @apply border-gold/50 shadow-md;
+    box-shadow: 0 0 15px rgba(166, 142, 87, 0.2);
+  }
+
+  /* Content padding to account for fixed navbar */
+  .content-container {
+    padding-top: calc(var(--navbar-height) + 1.5rem);
+  }
+
+  @media (max-width: 768px) {
+    .content-container {
+      padding-top: calc(var(--navbar-height-mobile) + 1.5rem);
+    }
+  }
+
+  /* Update the content-area class to include a gold shadow */
+  .content-area {
+    @apply bg-slate-50 text-charcoal rounded-lg p-6;
+    box-shadow: 0 4px 20px rgba(166, 142, 87, 0.3), 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(166, 142, 87, 0.2);
+  }
+
+  /* Add a new class for interactive components with gold shadow */
+  .interactive-card {
+    border-color: rgba(166, 142, 87, 0.2);
+    box-shadow: 0 4px 20px rgba(166, 142, 87, 0.3), 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .interactive-card:hover {
+    box-shadow: 0 6px 25px rgba(166, 142, 87, 0.4), 0 3px 10px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+  }
+
+  /* Make sure prose text is readable */
+  .prose {
+    @apply text-charcoal;
+  }
+
+  /* Futuristic styles */
+  .hover-shine {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hover-shine::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(30deg);
+    transition: transform 0.5s ease-out;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0;
+  }
+
+  .hover-shine:hover::after {
+    opacity: 1;
+    transform: rotate(30deg) translate(100%, 100%);
+  }
+
+  /* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(30, 30, 40, 0.5);
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(126, 181, 189, 0.3);
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(126, 181, 189, 0.5);
+  }
+
+  /* Slow spin animation */
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 10s linear infinite;
+  }
+
+  .sf-heading {
+    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  /* Blob animations */
+  @keyframes float-blob {
+    0%,
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-5px) rotate(2deg);
+    }
+    50% {
+      transform: translateY(0) rotate(0deg);
+    }
+    75% {
+      transform: translateY(5px) rotate(-2deg);
+    }
+  }
+
+  .animate-float-blob {
+    animation: float-blob 8s ease-in-out infinite;
+    animation-delay: calc(var(--blob-delay, 0) * 1s);
+  }
+
+  /* Blob hover effect */
+  .blob-hover {
+    transition: all 0.3s ease;
+  }
+
+  .blob-hover:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(166, 142, 87, 0.4);
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
