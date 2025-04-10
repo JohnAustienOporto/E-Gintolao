@@ -15,11 +15,11 @@ export default function PaniniwalPage() {
   const beliefs = [
     {
       number: 1,
-      title: "Panguguros Bago Pumasok sa Balon",
+      title: "Pangunguros Bago Pumasok sa Balon",
       description: "Ugaliing manguros bago pumasok sa balon o butas upang mailayo sa kapahamakan.",
       image: "/images/paniniwala/manguros.jpg",
       explanation:
-        "Ang panguguros ay isang paraan ng paghingi ng proteksyon at pagpapakita ng paggalang.",
+        "Ang pangunguros ay isang paraan ng paghingi ng proteksyon at pagpapakita ng paggalang.",
     },
     {
       number: 2,
