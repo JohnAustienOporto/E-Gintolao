@@ -26,7 +26,7 @@ export default function GawiPage() {
     {
       number: 2,
       title: "Paglalagay ng Palapot",
-      description: "Maglagay ng palapot sa paligad ng butas ng kabodan upang maiwasan ang aksidente.",
+      description: "Maglagay ng palapot sa paligid ng butas ng kabodan upang maiwasan ang aksidente.",
       icon: Shield,
       image: "/images/gawi/paglalagay.jpg", // Add specific image for this custom
       details:
@@ -49,7 +49,7 @@ export default function GawiPage() {
       icon: Coins,
       image: "/images/gawi/paggastos.jpg", // Add specific image for this custom
       details:
-        "Ang paggastos ng kita mula sa pagmimina ay may kakaibang pattern sa mga minero sa Jose Panganiban. Kapag sila ay 'paldo' o may malaking kita mula sa ginto, una nilang binibili ang mga pangangailangan sa bahay upang matiyak na may sapat na pagkain at iba pang pangunahing pangangailangan ang kanilang pamilya. Pagkatapos nito, karaniwan na silang pumupunta sa sugalan, na nagpapakita ng balanse sa pagitan ng responsibilidad sa pamilya at personal na kasiyahan o libangan.",
+        "Ang paggastos ng kita mula sa pagmimina ay may kakaibang pattern sa mga minero sa Jose Panganiban. Kapag sila ay 'paldo' o may malaking kita mula sa ginto, una nilang binibili ang mga pangangailangan sa bahay upang matiyak na may sapat na pagkain at iba pang pangunahing pangangailangan ang kanilang pamilya.",
     },
   ]
 
