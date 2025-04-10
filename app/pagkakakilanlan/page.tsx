@@ -1,12 +1,12 @@
 "use client"
 
-import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import { ClickableImage } from "@/components/image-viewer"
+import { Navbar } from "@/components/navbar"
 import { ScrollAnimation } from "@/components/scroll-animation"
 import { motion } from "framer-motion"
+import { Info, Sparkles, Users } from "lucide-react"
 import { useState } from "react"
-import { Users, Sparkles, Info } from "lucide-react"
-import { ClickableImage } from "@/components/image-viewer"
 
 export default function PagkakakilanlanPage() {
   const [activeIdentityIndex, setActiveIdentityIndex] = useState<number | null>(null)
@@ -35,7 +35,7 @@ export default function PagkakakilanlanPage() {
     },
     {
       number: 3,
-      title: "Maputik ang buoang katawan",
+      title: "Maputik ang buong katawan",
       description:
         "Ang mga minero ay kadalasang natatakpan ng putik dahil sa kalikasan ng kanilang trabaho sa tubig at lupa.",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Maputik.jpg-lVLrDECt2lubgp4bTRuBA3h7gkMrQn.jpeg",
@@ -44,7 +44,7 @@ export default function PagkakakilanlanPage() {
     },
     {
       number: 4,
-      title: "May sout na alahas na ginto",
+      title: "May suot na alahas na ginto",
       description:
         "Maraming minero ang nagsusuot ng alahas na ginto bilang simbolo ng kanilang tagumpay at pagmamalaki sa kanilang hanapbuhay.",
       image:
@@ -54,7 +54,7 @@ export default function PagkakakilanlanPage() {
     },
     {
       number: 5,
-      title: "May sout na alahas na silver",
+      title: "May suot na alahas na silver",
       description:
         "Bukod sa ginto, maraming minero rin ang nagsusuot ng alahas na pilak, na nagpapakita ng kanilang pagpapahalaga sa iba't ibang uri ng metal.",
       image:
@@ -140,7 +140,7 @@ export default function PagkakakilanlanPage() {
                 Mga Pagkakakilanlan
               </h1>
               <p className="text-lg text-slate/90 max-w-2xl mx-auto">
-                Ang mga komunidad na nagpapanning ng ginto sa Jose Panganiban ay may iba't ibang pagkakakilanlan na
+                Ang mga komunidad na nagpapaning ng ginto sa Jose Panganiban ay may iba't ibang pagkakakilanlan na
                 nabuo sa loob ng maraming taon.
               </p>
             </div>
@@ -288,4 +288,6 @@ export default function PagkakakilanlanPage() {
     </main>
   )
 }
+
+
 
