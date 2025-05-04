@@ -107,6 +107,84 @@ export default function TungkolSaMananaliksikPage() {
                   </ul>
                 </div>
               </div>
+              <div className="max-w-6xl mx-auto px-4">
+  <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mb-12">
+    <h2 className="text-2xl font-semibold mb-6 text-center border-b pb-4">TAGAPAYO AT PROPESOR</h2>
+
+    <div className="flex flex-col md:flex-row gap-8">
+      <div className="md:w-1/3 flex justify-center">
+        <div className="w-48 h-48 bg-gray-200 rounded-full overflow-hidden border-4 border-gold-dark">
+          <Image 
+            src="/images/ryan.jpg" // Replace with actual path to his photo
+            alt="Dr. Ryan S. Rodriguez"
+            width={192}
+            height={192}
+            className="object-cover w-full h-full"
+          />
+        </div>
+      </div>
+      <div className="md:w-2/3">
+        <h3 className="text-2xl font-semibold text-gold-dark mb-2">RYAN S. RODRIGUEZ, PhD</h3>
+        <p className="text-lg font-medium text-gray-800 mb-2">Tagapayo</p>
+        <p className="mb-4 italic text-gray-700">Doktor ng Pilosopiya sa Filipino</p>
+
+        <p className="mb-2 text-gray-800">Nagtapos ng kolehiyo sa La Consolacion College-Daet sa kursong Batsilyer sa Pansekondaryang Edukasyon major sa Filipino noong 2005. Nagtapos ng Master of Arts in Education major sa Filipino sa Universidad de Santa Isabel - Lungsod Naga. Nagkamit ng karangalan bilang <strong>Magna Cum Laude</strong>, pinakamahusay na Tesis at Presenter noong 2016. Nakamit ang titulong <strong>Doktor ng Pilosopiya sa Filipino</strong> noong 2024 sa Bicol University - Lungsod Legazpi at hinirang na pinakamahusay na disertasyon.</p>
+        
+        <p className="mt-4 mb-2 text-gray-800">Sa mahabang panahon ng kanyang pagtuturo, naging aktibo at kabahagi siya sa mga sumusunod na gawain at organisasyon:</p>
+        <ul className="list-disc pl-5 space-y-1 text-gray-800">
+          <li>Pangulo - Pambansang Samahan ng mga Tagapagtaguyod ng Wika at Panitikan, Inc. (PSTWPI). 2024 - kasalukuyan</li>
+          <li>Pangalawang Pangulo - Pambansang Samahan ng Tagapagtaguyod ng Wika, Kultura at Sining ng Pilipinas (PSTWKSP). 2022 - kasalukuyan</li>
+          <li>Kalihim - Samahan ng mga Direktor ng mga Sentro ng Wika at Kultura sa Pilipinas (SDSWKP). 2022 - kasalukuyan</li>
+          <li>Punong Patnugot - BANYUHAY Dyornal ng Camarines Norte State College. 2023 - kasalukuyan</li>
+          <li>Puno - Sentro ng Wika at Kultura sa Camarines Norte State College. 2022 - 2024</li>
+          <li>Miyembro - Philippine Association of Coaches and Adjudicator for Culture and Arts. 2016 - kasalukuyan</li>
+          <li>Mananaliksik</li>
+          <li>Manunulat</li>
+          <li>Lexicographer</li>
+          <li>Tagasalin</li>
+        </ul>
+
+        <p className="mt-4 text-gray-800">Kasalukuyang Katuwang na Propesor II na nagtuturo ng mga araling Filipino, Professional subjects at Life and Works of Rizal sa Camarines Norte State College - Kolehiyo ng Edukasyon, Daet, Camarines Norte.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="max-w-6xl mx-auto px-4">
+  <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mb-12">
+    <h2 className="text-2xl font-semibold mb-6 text-center border-b pb-4">PROPESOR</h2>
+
+    <div className="flex flex-col md:flex-row gap-8">
+      {/* No image available, skip image section */}
+      <div className="md:w-full">
+        <h3 className="text-2xl font-semibold text-gold-dark mb-2">Rose Ann Dela Paz-Aler</h3>
+        <p className="text-lg font-medium text-gray-800 mb-2">Camarines Norte State College</p>
+        <p className="mb-4 italic text-gray-700">roseann.aler@gmail.com</p>
+
+        <p className="text-gray-800 mb-4">
+          Isang dalubguro sa Filipino ng Camarines Norte State College. Kasalukuyang Puno ng Sentro ng Wika at Kultura sa kanilang paaralan sa ilalim ng Komisyon sa Wikang Filipino.
+        </p>
+
+        <p className="text-gray-800 mb-4">
+          Nagtapos ng <strong>Bachelor of Arts in Filipinology</strong> minor in Instructional Arts sa Polytechnic University of the Philippines noong Mayo 2009 at lisensyadong guro. Nakamit ang digring <strong>Master of Arts in Education Major in Filipino</strong> sa Roosevelt College Foundation noong Abril 2016. Noong Hunyo 2020, natapos niya ang kanyang <strong>PhD in Philippine Studies (Language, Culture and Media)</strong> sa De La Salle University bilang isang iskolar sa ilalim ng CHED Kto12 Transition Scholarship Program.
+        </p>
+
+        <p className="text-gray-800 mb-4">
+          Tubong Marikina at ilang taon nang naninirahan sa Camarines Norte. Ang kanyang mga pananaliksik ay nakatuon sa <strong>Philippine Studies</strong> na sumasakop sa wika, kultura, panitikan, at iba pa.
+        </p>
+
+        <p className="text-gray-800 mb-4">
+          Nakapaglahad siya ng mga papel-pananaliksik sa mga pambansa at pandaigdigang kumperensya. Noong 2021, ginawaran siya ng <strong>unang gantimpala</strong> sa LIRIP 5 ng Lumina Foundation para sa kanyang papel na <em>“Ang Konsepto ng Bayan sa mga Kuwentong-Bayan ng Camarines Norte”</em>, at <strong>ikalawang gantimpala</strong> naman sa Pandaigdigang Panayam-Palihan sa Filipino para sa kanyang pananaliksik na <em>“Ang Bantayog Festival: Daluyan ng Kultura at Pagkakakilanlan ng Camarines Norte.”</em>
+        </p>
+
+        <p className="text-gray-800 mb-4">
+          Ang ilan sa kanyang mga pananaliksik ay nailathala na sa <strong>BANYUHAY: CNSC Research Journal Special Edition</strong>. Sa kasalukuyan, sinusubukan din niyang magkaroon ng espasyo sa larangan ng panulaan. Ilan sa kanyang mga tula ay nailathala sa koleksyong <strong>ALIMUONG</strong>, sa erasure poem ng <strong>whenisnow.org</strong>, at sa <strong>zine ng UP Diliman na Kalasag</strong>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
             </div>
           </div>
         </div>
